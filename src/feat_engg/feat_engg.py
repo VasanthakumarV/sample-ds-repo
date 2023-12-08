@@ -5,4 +5,5 @@ from .feat_engg_2 import feat_engg_2
 
 
 def run_seq(df: pl.DataFrame) -> pl.DataFrame:
-    return df.pipe(feat_engg_1).pipe(feat_engg_2)
+    df = df.pipe(feat_engg_1).pipe(feat_engg_2)
+    return 1
